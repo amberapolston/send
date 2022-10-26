@@ -87,9 +87,25 @@ button:hover {
 .hero-container img {
   max-width: 600px;
 }
-
-#media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .hero-container {
     grid-template-columns: 1fr;
+  }
+
+  .column-left {
+    max-width: 600px;
+  }
+
+  .column-right {
+    max-width: 600px;
+    padding-top: 20px;
+  }
+
+  .column-right img {
+    width: 100%;
+  }
+
+  .nav__list {
+    display: none;
   }
 }
